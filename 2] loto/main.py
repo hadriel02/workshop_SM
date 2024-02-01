@@ -2,6 +2,10 @@ from random import choice
 
 
 def player_tip():
+    """
+    player_tip function ask player for 6 numbers from 1 to 49
+    with validation for range, repetition and value
+    """
     tip_list = []
     while len(tip_list) < 6:
         try:
@@ -16,6 +20,9 @@ def player_tip():
 
 
 def computer_tip():
+    """
+    computer_tip function draw 6 different numbers from 1 to 49
+    """
     range_list = list(range(1, 50))
     c_tip_list = []
     while len(c_tip_list) < 6:
@@ -26,6 +33,10 @@ def computer_tip():
 
 
 def lotto():
+    """
+    lotto collects player_tip and computer_tip results and count
+    similar tips
+    """
     player_list = player_tip()
     computer_list = computer_tip()
     matched = 0
