@@ -24,4 +24,6 @@ def guess_num():
 
 
 number = randint(1, 100)
-guess_num()
+
+if __name__ == '__main__':
+    guess_num()
